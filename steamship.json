@@ -1,0 +1,60 @@
+{
+	"type": "package",
+	"handle": "auto-gpt",
+	"version": "0.11.0",
+	"description": "Deploy an AutoGPT Telegram bot on Steamship.",
+	"author": "",
+	"entrypoint": "Unused",
+	"public": true,
+	"plugin": null,
+	"build_config": {
+		"ignore": [
+			"tests",
+			"examples"
+		]
+	},
+	"configTemplate": {
+		"bot_token": {
+			"type": "string",
+			"description": "The secret token for your Telegram bot",
+			"default": null
+		},
+		"model_name": {
+			"type": "string",
+			"description": "The model name, either 'gpt-3.5-turbo' or 'gpt-4'",
+			"default": "gpt-3.5-turbo"
+		},
+		"max_tokens": {
+			"type": "number",
+			"description": "Maximum number of tokens that should be returned by the LLM for each call. This controls the length of the text responses.",
+			"default": 256
+		},
+		"max_iterations": {
+			"type": "number",
+			"description": "Maximum number of steps AutoGPT should take before stopping. Must be between 0 and 10 (0 is interpreted to mean to run without limits).",
+			"default": 3
+		}
+	},
+	"steamshipRegistry": {
+		"tagline": "Create your own Telegram Buddy running AutoGPT with Langchain and Steamship.",
+		"tagline2": null,
+		"usefulFor": null,
+		"videoUrl": null,
+		"githubUrl": null,
+		"demoUrl": null,
+		"blogUrl": null,
+		"jupyterUrl": null,
+		"authorGithub": null,
+		"authorName": null,
+		"authorEmail": null,
+		"authorTwitter": null,
+		"authorUrl": null,
+		"tags": [
+			"Telegram",
+			"LangChain",
+			"GPT",
+			"Agents",
+			"AutoGPT"
+		]
+	}
+}
